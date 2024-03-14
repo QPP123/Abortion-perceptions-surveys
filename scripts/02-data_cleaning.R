@@ -1,5 +1,5 @@
 #### Preamble ####
-# Purpose: Cleans the raw plane data from GSS and remove useless options
+# Purpose: Cleans the raw data from GSS and remove useless options
 # Author: Kuiyao Qiao
 # Date: 13th March 2024
 # Contact: kuiyao.qiao@mail.utoronto.ca

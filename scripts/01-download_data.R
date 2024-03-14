@@ -13,16 +13,6 @@
 #library(tidyverse)
 
 #### Download data ####
-# [...ADD CODE HERE TO DOWNLOAD...]
-#zip_file <- "inputs/data/large_files/GSS_stata.zip"
-#download.file("https://gss.norc.org/Documents/stata/GSS_stata.zip", zip_file)
-#unzip(zip_file, exdir = "inputs/data/large_files")
 
-#raw_gss_data <- read_dta("inputs/data/large_files/GSS_stata/GSS7218_R1.dta")
 
 #### Save data ####
-# [...UPDATE THIS...]
-# change the_raw_data to whatever name you assigned when you downloaded it.
-#write_csv(the_raw_data, "C:/Users/Kuiyao/Desktop/inputs/data/raw_data/raw_data.csv") 
-
-         

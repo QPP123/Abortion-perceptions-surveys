@@ -3,7 +3,7 @@ title: "Investigating Social Perceptions of Women’s Rights and Abortion Over Y
 author: 
   - Kuiyao Qiao
   - Xiaoyu Miao
-thanks:"Code and data are available at: https://github.com/QPP123/Investigating-Social-Perceptions-of-Women-s-Rights-and-Abortion-Over-Years-A-Research-with-Surveys"
+thanks:" Code and data are available at: https://github.com/QPP123/Investigating-Social-Perceptions-of-Women-s-Rights-and-Abortion-Over-Years-A-Research-with-Surveys"
 date: March 11, 2024
 date-format: long
 abstract:"This paper investigates changes in the social perception of abortion in the United States over the past five decades, utilizing data from the General Social Survey conducted by the National Opinion Research Center at the University of Chicago. Through meticulous analysis of survey responses from approximately 46,700 valid cases, we uncover that, although opinions on abortion have slightly shifted, these changes are not statistically significant. Our findings reveal a complex landscape where support for abortion varies across different circumstances, such as the health of the woman, economic constraints, marital status, fetal health issues, and cases of rape, reflecting nuanced societal attitudes towards this contentious issue. This study highlights the critical role of social perception in shaping abortion-related legislation, healthcare access, and the broader discourse on gender equality and women's autonomy, underlining the importance of continuous dialogue and informed policy-making in navigating the complexities of abortion rights."
