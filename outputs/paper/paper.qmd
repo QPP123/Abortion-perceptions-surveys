@@ -6,7 +6,7 @@ author:
 thanks:"Code and data are available at: https://github.com/QPP123/Investigating-Social-Perceptions-of-Women-s-Rights-and-Abortion-Over-Years-A-Research-with-Surveys"
 date: March 11, 2024
 date-format: long
-abstract:" "
+abstract:"This paper investigates changes in the social perception of abortion in the United States over the past five decades, utilizing data from the General Social Survey conducted by the National Opinion Research Center at the University of Chicago. Through meticulous analysis of survey responses from approximately 46,700 valid cases, we uncover that, although opinions on abortion have slightly shifted, these changes are not statistically significant. Our findings reveal a complex landscape where support for abortion varies across different circumstances, such as the health of the woman, economic constraints, marital status, fetal health issues, and cases of rape, reflecting nuanced societal attitudes towards this contentious issue. This study highlights the critical role of social perception in shaping abortion-related legislation, healthcare access, and the broader discourse on gender equality and women's autonomy, underlining the importance of continuous dialogue and informed policy-making in navigating the complexities of abortion rights."
 format: pdf
 number-sections: true
 ibligrapgy:references.bib
@@ -17,12 +17,53 @@ ibligrapgy:references.bib
 #| warning: false
 #| message: false
 
+#download the packages if necessary, then load the packages
 library(readxl)
 library(dplyr)
 library(ggplot2)
 
 data <- read_excel("C:/Users/Kuiyao/iCloudDrive/Documents/UT/INF 312/Paper/Paper 3/data/batch_0/result/GSS.xlsx")
 ```
+
+# Introduction
+
+**The introduction is self-contained and tells a reader everything they need to know including: 1) broader context to motivate;**
+
+**Estimand**
+
+**The estimand is clearly stated in the introduction.**
+
+**1) broader context to motivate:**
+
+Nowadays we live in a world full of dynamic changes 
+
+Women’s rights are especially important. Under this relatively broad topic, abortion is an essential yet controversial subtopic that worth studying, as this relates to lives. The topic is important also because the society’s general perceptions of women’s rights and abortion can greatly affect numerous women’s fates – whether they could be financially self-sufficient or not, whether they get to choose to become a mother or not, whether they could live their life according to their free wills or not. As half of the world’s populations are biologically females, and almost everyone has female family member and/or female friends, the topic is directly related to almost everyone. 
+
+**2) some detail about what the paper is about;**
+
+**3) a clear gap that needs to be filled;**
+
+**We intend to investigate the gap that whether perception of abortion changed significantly over the past 5 decades.**
+
+**4) what was done;**
+
+We gained the data from GSS (General Social Survey), a sociological survey created by the by the National Opnion Research at the University of Chicago. This makes sure the source of data is relatively reliable, and the data is relatively accurate and up-to-date. We downloaded tha survey data and made graphs and table out of them, and then we use those to analyze the patterns. 
+
+**5) what was found;**
+
+We found that over the past 5 years, the social perceptions and opinions of abortion in the United States slightly changed, but the changes were not significant.
+
+**6) why it is important;**
+
+These findings are inportant because social perception on abortion significantly impacts lawmaking, healthcare access, and individual experiences, as public opinion shapes abortion-related legislation, influences the availability of services, and affects the stigmatization or support individuals face. Moreover, these perceptions guide educational campaigns on reproductive health and underscore the connection between abortion views and broader issues of gender equality and women's autonomy. This complex interplay between social attitudes and practical outcomes highlights the importance of understanding and addressing public opinions on abortion. Seeing the historical trends through survey answers in the past 5 decades could tell the information about social perceptions on abortion over decades, and thus lead us to better understand the development of the social movements.
+
+**7) the structure of the paper. A reader should be able to read only the introduction and know what was done, why, and what was found. Likely 3 or 4 paragraphs, or 10 per cent of total.**
+
+In this paper, we structured it into six parts: abstract, introduction, data, results, discussion, and supplementary survey questions. In each part, we 
+
+**Estimand**: This study aim to estimate the nation’s perception based on the valid survey responses of around 46700 cases. Although the total cases are around 72000, only around 46700 cases are valid. Comparing to the whole population of the United States, this quantity/parameter is not large. However it does represent a general sense of social perceptions. With this being said, we do want to recognize that the limitation of this survey study: that the demography of the respondents might be limited to certain regions/genders/age ranges/socioeconimc statuses, which could impact the inclusiveness and accuracy of the results.
+
+# **Data**
 
 # Results
 
@@ -288,10 +329,6 @@ This paper examines social perception 
 
 We learn more about women’s rights movement and abortion 
 
-Methodology: 
-
-Survey
-
 Key Features: 
 
 Strengths: valid cases is large
@@ -311,6 +348,10 @@ Discussion of the questionnaire:
 The good part is that each question is very specific and on-point: they are clearly yes or no question but also leave the respondents the option of ‘don’t know’ or ‘not applicable’, which is professionally designed. 
 
 Bad part of the questionnaire is that the questions did not cover all the scenarios: for example, whether or not to receive abortion could be considered very differently if the pregnancy is over 10 or 12 weeks. The survey questions should add questions regarding this, such as ‘do you support abortion if the pregancy is over 10 weeks (which could be medically risky)?’ or something like that.
+
+# Conclusion
+
+# Appendix
 
 **Survey**
 
@@ -363,3 +404,5 @@ Supplementary Survey Questions:
 10. In your opinion, should abortion always be legal?
 
     1.  Yes       b. No
+
+# References
