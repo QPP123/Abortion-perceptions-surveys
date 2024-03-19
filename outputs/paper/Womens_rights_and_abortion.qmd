@@ -35,7 +35,7 @@ data <- read_csv(file_path)
 
 Abortion is an essential yet controversial topic that is worth studying as it relates to lives. We are motivated to write this topic because society's general perceptions of women's rights and abortion can significantly affect numerous women's fates – whether they could be financially self-sufficient or not, whether they get to choose to become a mother or not, whether they can live their life according to their free will or not. As half of the world's population is biologically female, and almost everyone has female family members and female friends, the topic is directly related to nearly everyone. This paper analyzes U.S. social perceptions of abortion from 1972 to 2022, using General Social Survey data. It examines public opinion on various scenarios where abortion might be sought, revealing slight changes towards acceptance in specific contexts, like health risks and rape. The study showcases nuanced views of abortion, indicating evolving social norms. Through detailed analysis, including statistical graphs and demographic insights, it contributes to discussions on women's rights and policy-making, highlighting the complex relationship between societal attitudes and abortion.
 
-In the current academic world, the studies of social perception of abortion have not been conducted in a comparative and historical context. Therefore, we intend to investigate the gap between the lack of research on abortion in a historical context in a holistic approach by sourcing and analyzing the data from a relatively reliable website. We gained the data from GSS (General Social Survey), a sociological survey created by the National Opinion Research at the University of Chicago. This ensures the data source is relatively reliable, actively accurate, and up-to-date. We downloaded the survey data and made graphs and tables out of them, and then we used those to analyze the patterns. 
+In the current academic world, the studies of social perception of abortion have not been conducted in a comparative and historical context. Therefore, we intend to investigate the gap between the lack of research on abortion in a historical context in a holistic approach by sourcing and analyzing the data from a relatively reliable website. We gained the data from GSS (General Social Survey), a sociological survey created by the National Opinion Research at the University of Chicago. This ensures the data source is relatively reliable, actively accurate, and up-to-date. We downloaded the survey data and made graphs and tables out of them, and then we used those to analyze the patterns.
 
 The paper finds that social perceptions of abortion in the U.S. from 1972 to 2022 have shown slight but not significant changes, with a general trend towards acceptance in specific contexts such as health risks and rape. It reflects the complexity of societal attitudes and the impact of various factors on these opinions. The analysis suggests evolving social norms and points towards the need for further research on demographic specifics to understand these changes better. These findings are significant because the social perception of abortion significantly impacts lawmaking, healthcare access, and individual experiences, as public opinion shapes abortion-related legislation, influences the availability of services, and affects the stigmatization or support individuals face. Moreover, these perceptions guide educational campaigns on reproductive health and underscore the connection between abortion views and broader issues of gender equality and women's autonomy. This complex interplay between social attitudes and practical outcomes highlights the importance of understanding and addressing public opinions on abortion. Seeing the historical trends through survey answers in the past five decades could tell us about social perceptions on abortion over the decades and thus lead us to understand social movements' development better.
 
@@ -71,9 +71,9 @@ The data was cleaned and analyzed using the open-source statistical programming 
 
 Results will likely require summary statistics, tables, graphs, images, and possibly statistical analysis or maps. There should also be text associated with all these aspects. Show the reader the results by plotting them where possible. Talk about them. Explain them. That said, this section should strictly relay results. Regression tables must not contain stars.
 
-**Graph 1:**
+**Figure 1:**
 
-Key points are:
+Key points in figure 1 are:
 
 -   The 'Yes' responses (green line) are consistently higher than the 'No' responses (red line) from 1970 to slightly past 2020, indicating a prevailing agreement with the option of abortion under these circumstances.
 
@@ -108,9 +108,9 @@ ggplot(data_summary_abdefect, aes(x = year, y = count, color = abdefect, group =
   scale_color_manual(values = c("YES" = "darkgreen", "NO" = "red"))
 ```
 
-**Graph 2:**
+**Figure 2:**
 
-Observations from the graph:
+Observations from figure 2:
 
 -   The 'Yes' responses (green) and 'No' responses (red) are quite volatile over the years. There are times when 'Yes' is higher and others when 'No' dominates, suggesting fluctuating opinions on this issue.
 
@@ -145,9 +145,9 @@ ggplot(data_summary_abnomore, aes(x = year, y = count, color = abnomore, group =
   scale_color_manual(values = c("YES" = "darkgreen", "NO" = "red"))
 ```
 
-**Graph 3:**
+**Figure 3:**
 
-Here's what the data indicates:
+Here's what the data in figure 3 indicates:
 
 -   The 'Yes' responses (green) are substantially higher than the 'No' responses (red) throughout the entire period from the 1970s to 2020. This indicates strong and consistent support for a woman's right to an abortion when her health is at risk.
 
@@ -182,9 +182,9 @@ ggplot(data_summary_abhlth, aes(x = year, y = count, color = abhlth, group = abh
   scale_color_manual(values = c("YES" = "darkgreen", "NO" = "red"))
 ```
 
-**Graph 4:**
+**Figure 4:**
 
-Key observations are:
+Key observations in figure 4 are:
 
 -   'Yes' responses (green) generally exceed 'No' responses (red), indicating more support for allowing abortions under these financial circumstances.
 
@@ -219,9 +219,9 @@ ggplot(data_summary_abpoor, aes(x = year, y = count, color = abpoor, group = abp
   scale_color_manual(values = c("YES" = "darkgreen", "NO" = "red"))
 ```
 
-**Graph 5:**
+**Figure 5:**
 
-Observations include:
+Observations in figure 5 include:
 
 -   'Yes' responses (green) are significantly higher than 'No' responses (red) throughout the entire time span, indicating strong support for allowing abortion under these circumstances.
 
@@ -256,9 +256,9 @@ ggplot(data_summary_abrape, aes(x = year, y = count, color = abrape, group = abr
   scale_color_manual(values = c("YES" = "darkgreen", "NO" = "red"))
 ```
 
-**Graph 6:**
+**Figure 6:**
 
-Observations include:
+Observations in figure 6 include:
 
 -   Unlike the previous graph, here, the 'Yes' (green) and 'No' (red) responses show a more competitive trend, with 'No' responses occasionally matching or exceeding 'Yes' responses at several points in time.
 
@@ -293,11 +293,11 @@ ggplot(data_summary_absingle, aes(x = year, y = count, color = absingle, group =
   scale_color_manual(values = c("YES" = "darkgreen", "NO" = "red"))
 ```
 
-**Graph 7:**
+**Figure 7:**
 
-Notable points:
+Notable points in figure 7:
 
--   There's a close contention between 'Yes' (green) and 'No' (red) responses throughout the years, reflecting a more divided public opinion on the broader issue of abortion on demand.
+-   There's been a close contention between 'Yes' (green) and 'No' (red) responses throughout the years, reflecting a more divided public opinion on the broader issue of abortion on demand.
 
 -   The 'No' responses have peaks that often surpass the 'Yes' responses, particularly in the mid-1980s to the mid-1990s and again in the early 2000s.
 
@@ -329,31 +329,29 @@ ggplot(data_summary_abany, aes(x = year, y = count, color = abany, group = abany
   scale_color_manual(values = c("YES" = "darkgreen", "NO" = "red"))
 ```
 
-The seven graphs you provided show public opinion over time on various circumstances under which abortion might be sought. Here's a consolidated summary of insights from the data:
+The seven graphs show public opinion over time on various circumstances under which abortion might be sought. A comprehensive summary of insights from the data are:
 
--   Health of the woman: There is consistent and strong support for abortion when the woman's health is seriously endangered. This opinion seems to hold relatively steady over the decades.
+-   Fetal health issues: As Figure 1 shows, there is strong support for abortion in cases of a strong chance of a severe defect in the baby, but with some fluctuations that might be tied to external factors or events.
 
--   Economic reasons: Opinions on abortion due to economic reasons, such as the family being of very low income and unable to afford more children, show more fluctuation and suggest that this reason for abortion is more contentious and less consistently supported than health-related reasons.
+-   Health of the woman: As figures 1 and 3 show, there is consistent and strong support for abortion when the woman's health is seriously endangered. This opinion seems to have held relatively steady over the decades. 
 
--   Marital status: There appears to be more support for abortion rights for unmarried women compared to married women who do not want more children, although both show some level of volatility in responses over the years.
+-   Economic reasons: As Figure 4 shows, opinions on abortion due to financial reasons, such as the family being of meagre income and unable to afford more children, show more fluctuation and suggest that this reason for abortion is more contentious and less consistently supported than health-related reasons.
 
--   Fetal health issues: There is strong support for abortion in cases of a strong chance of a serious defect in the baby, but with some fluctuations that might be tied to external factors or events.
+-   Marital status: As Figure 2 and Figure 6 show, there appears to be more support for abortion rights for unmarried women compared to married women who do not want more children. However, both show some level of volatility in responses over the years.
 
--   Pregnancy resulting from rape: Support for abortion is very high when pregnancy is the result of rape, with minimal opposition across the decades.
+-   Pregnancy resulting from rape: As Figure 5 shows, support for abortion is very high when pregnancy is the result of rape, with minimal opposition across the decades.
 
 -   General abortion access: When considering abortion for any reason the woman wants, the data shows a divided opinion with significant contention and volatility over the years.
 
-From these graphs, we can find that public opinion on abortion is generally more supportive when the reasons are related to the health of the woman or the fetus, or in cases of rape. When the reasons for seeking an abortion are not tied to such specific conditions, like economic reasons or general access to abortion for any reason, the public opinion seems to be more divided and subject to change over time.
-
-The volatility in responses, particularly in the graphs related to economic reasons and general abortion access, suggests that these topics are more influenced by the social, political, and economic context at various points in time. These insights could be critical for your research as they demonstrate the complexity and nuance of public opinion on abortion. It would be essential to analyze these trends in relation to policy changes, economic conditions, and social attitudes to understand the underlying causes of the fluctuations in opinion.
+From these graphs, we can find that public opinion on abortion is generally more supportive when the reasons are related to the health of the woman or the fetus or in cases of rape. When the reasons for seeking an abortion are not tied to such specific conditions, like economic reasons or general access to abortion for any reason, public opinion seems to be more divided and subject to change over time.
 
 # Discussion
 
-This paper examines the social perception of under what circumstances women should be free to receive an abortion. The underlying theme is the autonomy of women to their bodies:
+This paper examines the social perception of under what circumstances women should be free to receive an abortion. The underlying theme is the autonomy of women to their bodies, a fundamental aspect of reproductive rights and gender equality. Our analysis underscores the importance of recognizing and respecting women's agency in making decisions about their bodies and reproductive health. By exploring public attitudes towards abortion across various contexts, we aim to highlight the significance of ensuring that women have the right to make informed choices about their pregnancies without coercion or stigma. This theme resonates with broader discussions on bodily autonomy, individual freedoms, and social justice, emphasizing the need for policies and societal attitudes that uphold and protect women's rights to control their reproductive destinies. \@Kaczor2022
 
-Not only did we learn more about the social perception of Abortion over five decades in the United States, Overall, the social perception of women receiving abortions because of a strong chance of severe defects in the baby has not changed significantly over the decades;
+Not only did we learn more about the social perception of abortion over five decades in the United States, but we also identified nuanced shifts in public opinion regarding the circumstances under which abortion is considered acceptable. By analyzing data from the General Social Survey spanning from 1972 to 2022, we delved into various scenarios where abortion might be sought, including health risks, economic constraints, marital status, fetal health issues, pregnancy resulting from rape, and general abortion access. We studied trends, fluctuations, and prevailing attitudes across different periods by examining seven line graphs depicting these scenarios. Our findings underscore the complex nature of societal norms, individual beliefs, and external factors influencing public opinion on abortion. Moreover, this research contributes to ongoing discussions on women's rights, reproductive autonomy, and policy-making by shedding light on the evolving social perceptions surrounding abortion in the United States. Additionally, this study highlights the importance of considering historical context and demographic specifics when interpreting public opinion data, providing valuable insights for policymakers, advocates, and researchers alike. Ultimately, this paper contributes to a deeper understanding of the complex dynamics shaping societal attitudes toward abortion and their implications for broader social and policy considerations.
 
-However, holistically in recent ten years, more and more people support married women who don't want any more children to receive Abortion (figure 2); more and more people support women to be accessible to receive Abortion if the family is not financially capable of affording any more children (figure 4); more and more people support Abortion if the women get pregnant as a result of rape; more and more people support Abortion if women want for any reason. All these show that the U.S. society is progressing towards a more inclusive and liberal environment for women.
+**Overall, the social perception of women receiving abortions because of a strong chance of severe defects in the baby does not change significantly over the decades; However, holistically, in recent ten years, more and more people have supported married women who don't want any more children to receive abortion (figure 2); more and more people support women to be accessible to receive abortion if the family is not financially capable of affording any more children (figure 4); more and more people support abortion if the women get pregnant as a result of rape; more and more people support abortion if women want for any reason. All of these show that the US society is progressing towards a more inclusive and liberal environment for women.**
 
 **Strengths:**
 
@@ -361,23 +359,28 @@ We found out a lot about what people in the U.S. think about abortion over the l
 
 **Weaknesses:**
 
-The study doesn't tell us how they gathered all this info, making me wonder who they asked and how they asked it. Were they all from a particular age group or background? That could make the results biased. The survey also seems too broad and doesn't dive deep into specific details like age, race, gender, or where people live. These things matter because they can change how people view abortion. Plus, politics, religion, and culture play a massive role in shaping these views. Still, the study doesn't fully connect the dots on how all these factors interact with people's opinions on abortion.
+The weaknesses inherent in data collection and survey methodologies can significantly impact the reliability of research findings. One key concern is the need for more clarity regarding how data was collected, which can raise questions about the validity of the collected information. Moreover, surveys targeted at specific demographic groups, such as those based on age, gender, or religious affiliation, may inadvertently introduce bias by excluding other relevant perspectives. Additionally, when surveys are overly general and fail to account for diverse demographic factors like age, race, gender, religion, or geographical location, the resulting analyses may oversimplify complex issues, missing out on essential nuances in individual perceptions and experiences. This oversight can compromise the academic rigour of the research and limit its relevance in real-world applications. Therefore, it's crucial for researchers to carefully assess survey design and execution, considering factors like sampling methods, audience specificity, and question formulation, to mitigate biases and improve the quality of collected data.
 
-The whole survey is too general from an academic point of view. Age? Race? Gender? Religious? Geography? Perceptions are different
+Considering abortion is a relatively personal topic, the respondents' perceptions and attitudes might be significantly varied by their experiences and social environments. However, those critical factors cannot be reached just by looking at the numbers in the data and the surveys. @Jagannathan2021 Finding the correlations between the surveyed respondents and the whole nation's perception can also be challenging. Quantitative research and qualitative research cannot replace each other. Due to the current data limitation, we can only analyze what is currently available from the GSS website.
 
-The phenomena this research reveals are complex due to many factors, including politics, religion, socio-cultural progressions, and economic changes. According to related scholarly literature, the article "Introduction: The Politics of Abortion 50 Years after Roe" by Katrina Kimport and Rebecca Kreitzer reveals several critical insights about the intricate relationship between Abortion and politics in the United States. The article touches on the topic of Abortion and social perception, particularly highlighting how Abortion has been both marginalized and siloed in social science research despite its significance in politics and its common occurrence as a pregnancy outcome. This marginalization reflects broader social perceptions and the contentious nature of Abortion as a public issue. The authors discuss the "abortion research paradox," where, despite the political and social importance of Abortion, it remains underrepresented in top disciplinary journals, suggesting a disconnect between its real-world significance and its academic treatment.
+##Further Discussion
 
-To delve deeper into how different races, ethnicity, and cultures view Abortion, we accessed the scholarly article from Front Public Health named 'The role of community and culture in abortion perceptions, decisions, and experiences among Asian Americans'. This study explores the influence of culture and community on Asian Americans' experiences with medication abortion in the U.S. It suggests that religious stigma and lack of openness about sexual and reproductive health, among other factors, contribute to the complexities Asian Americans face regarding Abortion. It emphasizes the need for culturally sensitive and inclusive abortion care to address these challenges. It also advocates the need for more inclusive abortion care services that consider the diverse backgrounds and experiences within the Asian American community.
+The phenomena this research reveals are complex due to many factors, including politics, religion, socio-cultural progressions, and economic changes. @NitaIlieGoga2020 According to related scholarly literature, the article "Introduction: The Politics of Abortion 50 Years after Roe" by Katrina Kimport and Rebecca Kreitzer reveals several critical insights about the intricate relationship between abortion and politics in the United States. @KimportKreitzer2023 The article touches on the topic of abortion and social perception, particularly highlighting how abortion has been both marginalized and siloed in social science research despite its significance in politics and its common occurrence as a pregnancy outcome. This marginalization reflects broader social perceptions and the contentious nature of abortion as a public issue. The authors discuss the "abortion research paradox," where, despite the political and social importance of abortion, it remains underrepresented in top disciplinary journals, suggesting a disconnect between its real-world significance and its academic treatment.
 
-To understand how different religions view Abortion, the Pew Research Center's study on views about Abortion reveals varying opinions across different religious groups. Buddhists and Jews show high support for legal Abortion in most/all cases, while Evangelical Protestants and Jehovah's Witnesses exhibit strong opposition. Catholics and Mainline Protestants are more divided. The study highlights the complex relationship between religious beliefs and abortion attitudes, underscoring significant differences even within broader religious traditions. Detailed Statistics are provided in the article.
+To delve deeper into how different races, ethnicities, and cultures view abortion, we accessed the scholarly article from Front Public Health named 'The role of community and culture in abortion perceptions, decisions, and experiences among Asian Americans'. This study explores the influence of culture and community on Asian Americans' experiences with medication abortion in the U.S. It suggests that religious stigma and lack of openness about sexual and reproductive health, among other factors, contribute to the complexities Asian Americans face regarding abortion. It emphasizes the need for culturally sensitive and inclusive abortion care to address these challenges. It also advocates the need for more inclusive abortion care services that consider the diverse backgrounds and experiences within the Asian American community. @Chandrasekaran2023
 
-What is also worth mentioning is the legal progression of Abortion in the United States. Roe v. Wade was a landmark 1973 Supreme Court decision that recognized the constitutional right to Abortion. This decision required laws against Abortion to be balanced against the woman's right to privacy, significantly changing abortion laws across the United States and sparking ongoing debates and legislative actions around abortion rights. However, the government policy called the Global Gag Rule in 1984 came out to essentially go against Abortion. It prohibited foreign NGOs receiving U.S. federal funding from providing, advocating for, or referring patients to abortion services, even with non-U.S. funds. It has been rescinded and reinstated several times depending on the administration in power, reflecting changing U.S. political attitudes towards Abortion. This policy significantly impacts global health organizations' ability to offer comprehensive reproductive health services. In 1992, Planned Parenthood v. Casey appeared to become a significant U.S. Supreme Court case that reaffirmed the constitutional right to Abortion established in Roe v. Wade (1973). However, it also allowed states more leeway to impose restrictions on Abortion, introducing the "undue burden" standard. This standard prohibits regulations that place a substantial obstacle in the path of a woman seeking an abortion before fetal viability. Finally, in June 2022, Roe v. Wade was overturned by the U.S. Supreme Court on June 24, 2022, removing the federal constitutional right to an abortion that had been in place for nearly 50 years. All of these historical events represent the complex history of abortion rights in the United States. We can see that in the 50 years (1972-2022), the historical trend of Abortion at a legal level in the U.S. was not progressing in a single direction. It was established, restricted, prohibited, liberated, and overturned. This reflects its complicated relationship to U.S. politics – the legislative decisions heavily depend on the views of the politicians at the time. This also contributes to our understanding of why the social perceptions varied through different times in the data.
+To understand how different religions view abortion, the Pew Research Center's study on views about abortion reveals varying opinions across different religious groups. Buddhists and Jews show high support for legal abortion in most/all cases, while Evangelical Protestants and Jehovah's Witnesses exhibit strong opposition. Catholics and Mainline Protestants are more divided. The study highlights the complex relationship between religious beliefs and abortion attitudes, underscoring significant differences even within broader religious traditions.\@ViewsAboutAbortion2024 Detailed Statistics are provided in the article.
 
-How can we proceed in the future:
+What is also worth mentioning is the legal progression of abortion in the United States. Roe v. Wade was a landmark in 1973 in which the Supreme Court decision recognized the constitutional right to abortion. This decision required laws against abortion to be balanced against the woman's right to privacy, significantly changing abortion laws across the United States and sparking ongoing debates and legislative actions around abortion rights. However, the government policy called the Global Gag Rule in 1984 came out to essentially go against abortion. It prohibited foreign NGOs receiving U.S. federal funding from providing, advocating for, or referring patients to abortion services, even with non-U.S. funds. It has been rescinded and reinstated several times depending on the administration in power, reflecting changing U.S. political attitudes towards abortion. This policy significantly impacts global health organizations' ability to offer comprehensive reproductive health services. In 1992, Planned Parenthood v. Casey appeared to become a significant U.S. Supreme Court case that reaffirmed the constitutional right to abortion established in Roe v. Wade (1973). However, it also allowed states more leeway to impose restrictions on abortion, introducing the "undue burden" standard. This standard prohibits regulations that place a substantial obstacle in the path of a woman seeking an abortion before fetal viability. Finally, in June 2022, Roe v. Wade was overturned by the U.S. Supreme Court on June 24, 2022, removing the federal constitutional right to an abortion that had been in place for nearly 50 years. All of these historical events represent the complex history of abortion rights in the United States. We can see that in the 50 years (1972-2022), the historical trend of abortion at a legal level in the U.S. was not progressing in a single direction. It was established, restricted, prohibited, liberated, and overturned. This reflects its complicated relationship to U.S. politics – the legislative decisions heavily depend on the views of the politicians at the time. This also contributes to our understanding of why the social perceptions varied through different times in the data. @Parenthood
 
-In the future, the data would benefit if they specify survey respondents' demographic information such as age, race, gender, religion, and geography. From the research above from scholarly literature, we can understand how politics, cultures and beliefs influence the social perception of Abortion.
+##How can we proceed in the future:
 
-Discussion of the questionnaire: The good part is that each question is particular and on-point: they are clearly yes or no questions but also leave the respondents the option of 'don't know' or 'not applicable,' which is professionally designed. The bad part of the questionnaire is that the questions did not cover all the scenarios: for example, whether or not to receive an abortion could be considered very differently if the pregnancy is over 10 or 12 weeks. The survey questions should add questions regarding this, such as 'Do you support abortion if the pregnancy is over ten weeks (which could be medically risky)?' or something like that.
+In the future, the data would benefit if they specify survey respondents’ demographic information such as age, race, gender, religion, and geography. From the research above from scholarly literature, we can understand how politics, cultures and beliefs influence the social perception of abortion.
+
+##Discussion of the questionnaire:
+The good part is that each question is particular and on-point: they are clearly yes or no questions but leave the respondents the option of ‘don’t know’ or ‘not applicable,’ which is professionally designed. 
+The bad part of the questionnaire is that the questions did not cover all the scenarios: for example, whether or not to receive an abortion could be considered very differently if the pregnancy is over 10 or 12 weeks. The survey questions should add questions regarding this, such as ‘Do you support abortion if the pregnancy is over ten weeks (which could be medically risky)?’ or something like that.
+
 
 \newpage
 
