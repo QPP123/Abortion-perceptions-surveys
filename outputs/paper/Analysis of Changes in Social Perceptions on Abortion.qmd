@@ -259,7 +259,7 @@ ggplot(data_summary_abrape, aes(x = year, y = count, color = abrape, group = abr
 
 **Figure 6:**
 
-Observations in figure 6 @fig-not-want-to-marry include:
+Observations in @fig-not-want-to-marry include:
 
 -   Unlike the previous graph, here, the 'Yes' (green) and 'No' (red) responses show a more competitive trend, with 'No' responses occasionally matching or exceeding 'Yes' responses at several points in time.
 
@@ -296,7 +296,7 @@ ggplot(data_summary_absingle, aes(x = year, y = count, color = absingle, group =
 
 **Figure 7:**
 
-Notable points in figure 7 @fig-for-any-reason:
+Notable points in @fig-for-any-reason:
 
 -   There's been a close contention between 'Yes' (green) and 'No' (red) responses throughout the years, reflecting a more divided public opinion on the broader issue of abortion on demand.
 
@@ -340,7 +340,7 @@ The seven graphs show public opinion over time on various circumstances under wh
 
 -   Marital status: As @fig-married-and-not-want-more and @fig-not-want-to-marry show, there appears to be more support for abortion rights for unmarried women compared to married women who do not want more children. However, both show some level of volatility in responses over the years.
 
--   Pregnancy resulting from rape: As (@fig-pregnant-result-of-rape) shows, support for abortion is very high when pregnancy is the result of rape, with minimal opposition across the decades.
+-   Pregnancy resulting from rape: As @fig-pregnant-result-of-rape shows, support for abortion is very high when pregnancy is the result of rape, with minimal opposition across the decades.
 
 -   General abortion access: When considering abortion for any reason the woman wants, the data shows a divided opinion with significant contention and volatility over the years.
 
@@ -352,7 +352,7 @@ This paper examines the social perception of under what circumstances women shou
 
 Not only did we learn more about the social perception of abortion over five decades in the United States, but we also identified nuanced shifts in public opinion regarding the circumstances under which abortion is considered acceptable. By analyzing data from the General Social Survey spanning from 1972 to 2022, we delved into various scenarios where abortion might be sought, including health risks, economic constraints, marital status, fetal health issues, pregnancy resulting from rape, and general abortion access. We studied trends, fluctuations, and prevailing attitudes across different periods by examining seven line graphs depicting these scenarios. Our findings underscore the complex nature of societal norms, individual beliefs, and external factors influencing public opinion on abortion. Moreover, this research contributes to ongoing discussions on women's rights, reproductive autonomy, and policy-making by shedding light on the evolving social perceptions surrounding abortion in the United States. Additionally, this study highlights the importance of considering historical context and demographic specifics when interpreting public opinion data, providing valuable insights for policymakers, advocates, and researchers alike. Ultimately, this paper contributes to a deeper understanding of the complex dynamics shaping societal attitudes toward abortion and their implications for broader social and policy considerations.
 
-**Overall, the social perception of women receiving abortions because of a strong chance of severe defects in the baby does not change significantly over the decades; However, holistically, in recent ten years, more and more people have supported married women who don't want any more children to receive abortion (@fig-married-and-not-want-more) ; more and more people support women to be accessible to receive abortion if the family is not financially capable of affording any more children@fig-cannot-afford-more; more and more people support abortion if the women get pregnant as a result of rape; more and more people support abortion if women want for any reason. All of these show that the US society is progressing towards a more inclusive and liberal environment for women.**
+**Overall, the social perception of women receiving abortions because of a strong chance of severe defects in the baby does not change significantly over the decades; However, holistically, in recent ten years, more and more people have supported married women who don't want any more children to receive abortion (@fig-married-and-not-want-more) ; more and more people support women to be accessible to receive abortion if the family is not financially capable of affording any more children(@fig-cannot-afford-more); more and more people support abortion if the women get pregnant as a result of rape; more and more people support abortion if women want for any reason. All of these show that the US society is progressing towards a more inclusive and liberal environment for women.**
 
 ## Strengths**:**
 
