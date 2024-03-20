@@ -1,9 +1,9 @@
 # Womens_rights_and_abortion
-Investigating-Social-Perceptions-of-Women-s-Rights-and-Abortion-Over-Years-A-Research-with-Surveys
+Analysis of Changes in Social Perceptions on Abortion
 
 ## Overview
 
-This paper analyzed 46,700 survey responses; this paper finds that perceptions of abortion have changed slightly over time. Our analysis draws on the decades-old U.S. General Social Survey (GSS) dataset "Perceptions of Abortion in U.S. Society." It is programmed in R. This study highlights the critical role of societal perceptions in shaping abortion-related legislation, healthcare delivery, and the broader discourse on gender equality and women's autonomy.
+We investigate changes in the social perception of abortion in the United States over the past five decades, utilizing data from the General Social Survey. We analyze 46,700 survey responses and find that opinions on abortion have slightly shifted over time. Support for abortion depends on aspects as the health of the woman, economic constraints, marital status, fetal health issues, and there was rape. A specific example from the results is that support for abortion for women who don’t want children for any reason increased from 37.7% in 1977 to 58.9% in 2022. This study highlights the critical role of social perception in shaping abortion-related legislation, healthcare access, and the broader discourse on gender equality and women's autonomy.
 
 To use this folder, click the green "Code" button", then "Download ZIP". Move the downloaded folder to where you want to work on your own computer, and then modify it to suit.
 
