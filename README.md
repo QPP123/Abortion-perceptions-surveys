@@ -1,4 +1,4 @@
-# Womens_rights_and_abortion
+# Womens rights and abortion
 Analysis of Changes in Social Perceptions on Abortion
 
 ## Overview
