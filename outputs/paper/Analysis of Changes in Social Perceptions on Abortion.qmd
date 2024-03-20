@@ -158,8 +158,7 @@ The primary data comes from the GSS cumulative data file (1972-2022), a cross-se
 
 abdefect: Abortion if there is a strong chance of serious defect in the baby abnomore: Abortion if married and doesn't want more children abhlth: Abortion if a woman's health is seriously endangered abpoor: Abortion if low income and can't afford more children abrape: Abortion if pregnancy is the result of rape absingle: Abortion if not married and doesn't want to marry a man abany: Abortion for any reason For each question, respondents could answer "Yes," "No," or "Don't know." "Don't know" responses were treated as missing data to facilitate analysis.
 
-In @tbl-summary,When summarizing the General Social Survey data on attitudes toward abortion, it's noticeable that there's a significant number of respondents who chose "NA" – those who didn't provide a definitive yes or no. However, this doesn't necessarily skew the overall findings. Many individuals may not have a black-and-white stance on such a nuanced issue, so their uncertainty is understandable.
-We analyze the results and concentrate on the definitive responses for more precise insights. The data demonstrates a higher level of agreement with abortion in cases of severe health concerns or pregnancies resulting from rape. The yes-to-no ratio is substantially higher in these scenarios, indicating more substantial support. In contrast, questions about financial constraints or personal choice without further context show a more divided opinion. The roughly even split of yes and no responses here suggests that opinions vary widely and are likely influenced by individual circumstances and beliefs. This pattern reflects the complexity of public opinion on abortion and underscores the need to consider the context when discussing such a sensitive topic.
+In @tbl-summary,When summarizing the General Social Survey data on attitudes toward abortion, it's noticeable that there's a significant number of respondents who chose "NA" – those who didn't provide a definitive yes or no. However, this doesn't necessarily skew the overall findings. Many individuals may not have a black-and-white stance on such a nuanced issue, so their uncertainty is understandable. We analyze the results and concentrate on the definitive responses for more precise insights. The data demonstrates a higher level of agreement with abortion in cases of severe health concerns or pregnancies resulting from rape. The yes-to-no ratio is substantially higher in these scenarios, indicating more substantial support. In contrast, questions about financial constraints or personal choice without further context show a more divided opinion. The roughly even split of yes and no responses here suggests that opinions vary widely and are likely influenced by individual circumstances and beliefs. This pattern reflects the complexity of public opinion on abortion and underscores the need to consider the context when discussing such a sensitive topic.
 
 ## Data Limitations
 
@@ -294,9 +293,9 @@ ggplot(data_summary_abhlth, aes(x = year, y = count, color = abhlth, group = abh
 
 **Figure 4:**
 
-@fig-cannot-afford-more is interesting. The numbers fluctuate a lot, no matter if it's people who supported abortion if the women cannot afford to have more children or people who were against it. Although there were a few years in the early 1970s when people who supported abortion outnumbered people who were against it, in all the other years before, around 2017, there were slightly more people against abortion if the women cannot afford to have more children. This changed after around 2017 when more people started to support abortion if women could not afford to have more children. Key observations in @fig-can not-afford-more are:
+@fig-cannot-afford-more is interesting. The numbers fluctuate a lot, no matter if it's people who supported abortion if the women cannot afford to have more children or people who were against it. Although there were a few years in the early 1970s when people who supported abortion outnumbered people who were against it, in all the other years before, around 2017, there were slightly more people against abortion if the women cannot afford to have more children. This changed after around 2017 when more people started to support abortion if women could not afford to have more children. Key observations in @fig-cannot-afford-more are:
 
--'Yes' responses (green) generally exceed 'No' responses (red), indicating more support for allowing abortions under these financial circumstances.
+\-'Yes' responses (green) generally exceed 'No' responses (red), indicating more support for allowing abortions under these financial circumstances.
 
 -The data is quite volatile, with many peaks and troughs, suggesting that public opinion on this issue has varied significantly.
 
@@ -329,14 +328,13 @@ ggplot(data_summary_abpoor, aes(x = year, y = count, color = abpoor, group = abp
 
 **Figure 5:**
 
-@fig-pregnant-result-of-rape is a lot clearer. In the five decades, there were always a lot more people who supported abortion if a woman is pregnant as a result of rape. Although there are some fluctuations here, overall, the people who supported it always vastly outnumbered those who were against it. 
-Observations in @fig-pregnant-result-of-rape include:
+@fig-pregnant-result-of-rape is a lot clearer. In the five decades, there were always a lot more people who supported abortion if a woman is pregnant as a result of rape. Although there are some fluctuations here, overall, the people who supported it always vastly outnumbered those who were against it. Observations in @fig-pregnant-result-of-rape include:
 
-  -'Yes' responses (green) are significantly higher than 'No' responses (red) throughout the entire period, indicating strong support for allowing abortion under these circumstances.
+\-'Yes' responses (green) are significantly higher than 'No' responses (red) throughout the entire period, indicating strong support for allowing abortion under these circumstances.
 
-  -There are notable fluctuations in the 'Yes' responses, with peaks and valleys, but the overall trend remains much higher than the 'No' responses.
+-There are notable fluctuations in the 'Yes' responses, with peaks and valleys, but the overall trend remains much higher than the 'No' responses.
 
-  -The 'No' responses are relatively consistent over the years and remain low, suggesting that opposition to abortion in this context is consistently minimal.
+-The 'No' responses are relatively consistent over the years and remain low, suggesting that opposition to abortion in this context is consistently minimal.
 
 From this data, one could infer that there is a stable and overwhelming support for a woman's right to choose abortion in the case of rape, which has been maintained over the past five decades. This could be a critical point in your research, reflecting a societal consensus on the right to abortion in such traumatic circumstances.[@NORC_2023e]
 
@@ -365,13 +363,9 @@ ggplot(data_summary_abrape, aes(x = year, y = count, color = abrape, group = abr
   scale_color_manual(values = c("YES" = "darkgreen", "NO" = "red"))
 ```
 
-**Figure 6:**
-In @fig-not-want-to-marry, there are also a lot of fluctuations. We can see that all years before, around 2017, people who were against women receiving abortions because they didn’tdon't want to marry men almost always outnumbered people who supported abortion for the same reason. However, after around 2017, more people supported it than people who were against it. This suggests that social perceptions have significantly changed to a more feminist perspective since around 2017.
-Observations in @fig-not-want-to-marry include:
+**Figure 6:** In @fig-not-want-to-marry, there are also a lot of fluctuations. We can see that all years before, around 2017, people who were against women receiving abortions because they didn’tdon't want to marry men almost always outnumbered people who supported abortion for the same reason. However, after around 2017, more people supported it than people who were against it. This suggests that social perceptions have significantly changed to a more feminist perspective since around 2017. Observations in @fig-not-want-to-marry include:
 
-  -Unlike the previous graph, here, the 'Yes' (green) and 'No' (red) responses show a more competitive trend, with 'No' responses occasionally matching or exceeding 'Yes' at several points.
-  -The 'Yes' responses show high volatility but maintain an edge over 'No' reactions for most of the period.
-  -The late 1990s through the 2000s show particularly sharp fluctuations, with 'No' responses peaking above 'Yes' responses more frequently compared to other decades.
+-Unlike the previous graph, here, the 'Yes' (green) and 'No' (red) responses show a more competitive trend, with 'No' responses occasionally matching or exceeding 'Yes' at several points. -The 'Yes' responses show high volatility but maintain an edge over 'No' reactions for most of the period. -The late 1990s through the 2000s show particularly sharp fluctuations, with 'No' responses peaking above 'Yes' responses more frequently compared to other decades.
 
 This data suggests that public opinion on abortion in the case of women who do not want to marry a man has shifted from a more conservative perspective, where more people were against it, to a more inclusive perspective, where more people supported it. This suggests that society is more and more likely to support women's choices of their body and marriage status. This also implies that feminism has changed society in recent years.[@NORC_2023f]
 
@@ -402,12 +396,9 @@ ggplot(data_summary_absingle, aes(x = year, y = count, color = absingle, group =
 
 **Figure 7:**
 
-According to @fig-for-any-reason, the fluctuations and the trends are the same as the previous one: before, around 2017, there were more people against abortion for any reason than people who supported it. However, after around 2017, more people supported women to receive abortion for any reason. This also suggests that society is becoming more inclusive of women's decisions on their bodies and that society has genuinely adopted feminism in recent years.
-Notable points in @fig-for-any-reason:
+According to @fig-for-any-reason, the fluctuations and the trends are the same as the previous one: before, around 2017, there were more people against abortion for any reason than people who supported it. However, after around 2017, more people supported women to receive abortion for any reason. This also suggests that society is becoming more inclusive of women's decisions on their bodies and that society has genuinely adopted feminism in recent years. Notable points in @fig-for-any-reason:
 
-  -There's been a close contention between 'Yes' (green) and 'No' (red) responses throughout the years, reflecting a more divided public opinion on the broader issue of abortion on demand.
-  -The 'No' responses have peaks that often surpass the 'Yes' responses, particularly in the mid-1980s to the mid-1990s and again in the early 2000s.
-  -Both responses exhibit significant volatility, which could indicate shifting social, political, and legal landscapes influencing public opinion on the issue.
+-There's been a close contention between 'Yes' (green) and 'No' (red) responses throughout the years, reflecting a more divided public opinion on the broader issue of abortion on demand. -The 'No' responses have peaks that often surpass the 'Yes' responses, particularly in the mid-1980s to the mid-1990s and again in the early 2000s. -Both responses exhibit significant volatility, which could indicate shifting social, political, and legal landscapes influencing public opinion on the issue.
 
 This graph suggests that when considering abortion without condition, public opinion has been more polarized, with shifts possibly aligned with broader debates and changes in societal attitudes towards abortion.[@NORC_2023g]
 
@@ -459,11 +450,11 @@ Not only did we learn more about the social perception of abortion over five dec
 
 Overall, the social perception of women receiving abortions because of a strong chance of severe defects in the baby does not change significantly over the decades; However, holistically, in recent ten years, more and more people have supported married women who don't want any more children to receive abortion (@fig-married-and-not-want-more) ; more and more people support women to be accessible to receive abortion if the family is not financially capable of affording any more children(@fig-cannot-afford-more); more and more people support abortion if the women get pregnant as a result of rape; more and more people support abortion if women want for any reason. All of these show that the US society is progressing towards a more inclusive and liberal environment for women.
 
-## Strengths:
+## Strengths
 
 We found out a lot about what people in the U.S. think about abortion over the last fifty years. One of the big takeaways is that people's views on abortion haven't changed much when it comes to severe health defects in a baby. But in the last decade, we've seen more support for abortion in cases like when a married woman doesn't want more children when families can't afford more kids when pregnancy is due to rape, or even if a woman wants an abortion for any reason. This shows that America is slowly becoming more open and supportive of woman's rights to choose abortion.
 
-## Weaknesses:
+## Weaknesses
 
 The weaknesses inherent in data collection and survey methodologies can significantly impact the reliability of research findings. One key concern is the need for more clarity regarding how data was collected, which can raise questions about the validity of the collected information. Moreover, surveys targeted at specific demographic groups, such as those based on age, gender, or religious affiliation, may inadvertently introduce bias by excluding other relevant perspectives. Additionally, when surveys are overly general and fail to account for diverse demographic factors like age, race, gender, religion, or geographical location, the resulting analyses may oversimplify complex issues, missing out on essential nuances in individual perceptions and experiences. This oversight can compromise the academic rigour of the research and limit its relevance in real-world applications. Therefore, it's crucial for researchers to carefully assess survey design and execution, considering factors like sampling methods, audience specificity, and question formulation, to mitigate biases and improve the quality of collected data.
 
@@ -505,40 +496,28 @@ Introduction to the survey: Women’s rights is an essential topic in nowadays s
 
 Thank you for all the respondents for completing this survey! We appreciate your time and effort. Your response will help us gain a deeper understanding of people’s perceptions on women’s rights and abortion.
 
-Supplementary Survey Questions:
+## Supplementary Survey Questions
 
-1.What is your age? (select the range that applies)
-  a. 18-30    b. 31-50   c. above 50
+1.What is your age? (select the range that applies) a. 18-30 b. 31-50 c. above 50
 
-2.Are you religious? 
-  a. Yes       b. No
+2.Are you religious? a. Yes b. No
 
-3.What is your opinion on abortion?
-  a. Support it - her body her choice        b. neutral - it depends     c. against it
+3.What is your opinion on abortion? a. Support it - her body her choice b. neutral - it depends c. against it
 
-4.Do you believe that your view of abortion is influenced by your religious faith? 
-  a. Yes        b. No
+4.Do you believe that your view of abortion is influenced by your religious faith? a. Yes b. No
 
-5.Do you believe that your view  of abortion is influenced by your political faith?
-  a. Yes        b. No
+5.Do you believe that your view of abortion is influenced by your political faith? a. Yes b. No
 
-6.If you answer ‘support it’ to the above question, do you believe that women are free to receive abortion even if it’s after 10-12 weeks (which could be medically risky)?
-  a. Yes                b. Not sure               c. No
+6.If you answer ‘support it’ to the above question, do you believe that women are free to receive abortion even if it’s after 10-12 weeks (which could be medically risky)? a. Yes b. Not sure c. No
 
-7.Have you or someone you know had experienced abortion?
-  a. Yes, myself        b. yes, someone I know      c. No, I don’t know anyone who had experienced abortion
+7.Have you or someone you know had experienced abortion? a. Yes, myself b. yes, someone I know c. No, I don’t know anyone who had experienced abortion
 
-8.Do you believe that victims of rape shuold be free to receive abortion?
-  a. Yes       b. No
+8.Do you believe that victims of rape shuold be free to receive abortion? a. Yes b. No
 
-9.Do you believe that married women should also be free to receive abortion?
-  a. Yes       b. No
+9.Do you believe that married women should also be free to receive abortion? a. Yes b. No
 
-10.Do you believe that women should be able to receive abortion for any reasons
-  a. Yes       b. No
+10.Do you believe that women should be able to receive abortion for any reasons a. Yes b. No
 
-11.In your opinion, should abortion always be legal?
-  a. Yes       b. No
-
+11.In your opinion, should abortion always be legal? a. Yes b. No
 
 # References
