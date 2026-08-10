@@ -1,42 +1,66 @@
-# Womens rights and abortion
-Analysis of Changes in Social Perceptions on Abortion
+# Social Perceptions of Abortion in the United States, 1972–2022
 
 ## Overview
 
-We investigate changes in the social perception of abortion in the United States over the past five decades, utilizing data from the General Social Survey. We analyze 46,700 survey responses and find that opinions on abortion have slightly shifted over time. Support for abortion depends on aspects as the health of the woman, economic constraints, marital status, fetal health issues, and there was rape. A specific example from the results is that support for abortion for women who don’t want children for any reason increased from 37.7% in 1977 to 58.9% in 2022. This study highlights the critical role of social perception in shaping abortion-related legislation, healthcare access, and the broader discourse on gender equality and women's autonomy.
+This project examines changes in U.S. attitudes toward abortion over five decades using General Social Survey (GSS) data. The analysis considers seven circumstances involving fetal health, the woman's health, rape, economic constraints, marital status, family size, and abortion for any reason.
 
-To use this folder, click the green "Code" button", then "Download ZIP". Move the downloaded folder to where you want to work on your own computer, and then modify it to suit.
+Valid binary-response counts vary by survey item because missing and nonbinary responses are excluded. The analysis finds that attitudes shifted modestly over time, with substantial differences by circumstance. One reported result is that support for abortion for any reason increased from 37.7% in 1977 to 58.9% in 2022.
 
+## Authors
 
-## File Structure
+- Kuiyao Qiao
+- Xiaoyu Miao
 
-The repo is structured as:
+## Data source
 
--   `data/raw_data` contains the raw data as obtained from U.S. General Social Survey (GSS).
--   `data/analysis_data` contains the cleaned dataset that was constructed.
--   `other` contains relevant literature, details about LLM chat interactions, and sketches.
--   `paper` contains the files used to generate the paper, including the Quarto document and reference bibliography file, as well as the PDF of the paper. 
--   `scripts` contains the R scripts used to simulate, download and clean data.
+The project uses the NORC [General Social Survey](https://gss.norc.org/get-the-data.html) cumulative data for 1972–2022. The repository preserves the source extract at `inputs/data/raw_data/GSS.xlsx` and the cleaned analysis file at `inputs/data/analysis_data/analysis_data.csv`.
 
+The survey variables analyzed are `abdefect`, `abnomore`, `abhlth`, `abpoor`, `abrape`, `absingle`, and `abany`. Responses other than `YES` or `NO` are treated as missing for the analysis.
 
-## Statement on LLM usage
+Valid `YES`/`NO` counts in the tracked cleaned data are:
 
-/other/llm/usage.txt At the time of writing this report, we used ChatGPT 4 also to suggest grammatical and structural corrections to the content of the paper to ensure greater conciseness. ChatGPT was used as well as Claude for diagramming issues and error reporting fixes.
+| Survey item | Valid responses |
+|---|---:|
+| `abdefect` | 46,708 |
+| `abnomore` | 46,618 |
+| `abhlth` | 46,933 |
+| `abpoor` | 46,574 |
+| `abrape` | 46,491 |
+| `absingle` | 46,578 |
+| `abany` | 39,258 |
 
+## Methods
 
-## Access to GSS Data
-Step 1: Visit the GSS website
+The R workflow:
 
-Visit the GSS website: https://gssdataexplorer.norc.org/home
+1. reads the tracked GSS workbook;
+2. standardizes the seven response variables to `YES`, `NO`, or missing;
+3. validates the year range and response coding; and
+4. produces descriptive tables and time-series visualizations in Quarto.
 
-Step 2: Register for Access
+The study is descriptive and discusses the limits of survey nonresponse, sample composition, and inference from survey attitudes to the wider U.S. population.
 
-Register for an account by clicking on the orange button "CREATE AN ACCOUNT" on the home page and following the prompts.
+## Repository structure
 
-Step 3: Find relevant datasets
+- `inputs/data/raw_data/` — tracked GSS source workbook.
+- `inputs/data/analysis_data/` — cleaned CSV used in the analysis.
+- `scripts/` — data-access notes, cleaning code, simulation, and validation checks.
+- `outputs/paper/` — Quarto source, bibliography, and rendered paper.
+- `other/literature/` — supporting literature.
+- `other/sketches/` — planning sketches for the data, graphs, and tables.
 
-You can then use the search function on the website to complete the data collection.
+## Reproducibility
 
-Step 4: Download the data
+From the repository root, run:
 
-Once you have found the relevant dataset, you can start downloading it. The download method and instructions can be obtained from the URL "https://gss.norc.org/get-the-data".
+```sh
+Rscript scripts/02-data_cleaning.R
+Rscript scripts/03-test_data.R
+quarto render "outputs/paper/Analysis of Changes in Social Perceptions on Abortion.qmd"
+```
+
+The workflow requires R with `readxl`, `dplyr`, `tidyr`, `here`, `readr`, `tidyverse`, `ggplot2`, `knitr`, and `kableExtra`, plus Quarto for rendering. `scripts/01-download_data.R` documents the manual GSS data-access step; the committed workbook is the source snapshot used for the reported results.
+
+## Main output
+
+`outputs/paper/Analysis-of-Changes-in-Social-Perceptions-on-Abortion.pdf` is the rendered paper.

@@ -4,10 +4,10 @@ subtitle: "Data from U.S. General Social Survey (1972 to 2022)"
 author: 
   - Kuiyao Qiao
   - Xiaoyu Miao
-thanks: "Code and data are available at: https://github.com/QPP123/Investigating-Social-Perceptions-of-Women-s-Rights-and-Abortion-Over-Years-A-Research-with-Surveys"
+thanks: "Code and data are available at: https://github.com/QPP123/Abortion-perceptions-surveys"
 date: "March 11, 2024"
 date-format: long
-abstract: "We investigate changes in the social perception of abortion in the United States over the past five decades, utilizing data from the General Social Survey. We analyze 46,700 survey responses and find that opinions on abortion have slightly shifted over time. Support for abortion depends on aspects as the health of the woman, economic constraints, marital status, fetal health issues, and there was rape. A specific example from the results is that support for abortion for women who don’t want children for any reason increased from 37.7% in 1977 to 58.9% in 2022. This study highlights the critical role of social perception in shaping abortion-related legislation, healthcare access, and the broader discourse on gender equality and women's autonomy."
+abstract: "We investigate changes in social perceptions of abortion in the United States over five decades using General Social Survey data. Across seven survey items, valid YES/NO sample sizes range from 39,258 to 46,933 after missing and nonbinary responses are excluded. Attitudes vary substantially by circumstance and shift modestly over time. For abortion for any reason, support among valid respondents increased from 37.7% in 1977 to 58.9% in 2022. The study considers these descriptive patterns in relation to abortion policy, healthcare access, gender equality, and women's autonomy."
 format: pdf
 toc: true
 number-sections: true
@@ -44,13 +44,13 @@ The paper finds that social perceptions of abortion in the U.S. from 1972 to 202
 
 Structured into six parts—abstract, introduction, data, results, discussion, and supplementary survey questions—this paper endeavors to provide a deep understanding of the evolution of abortion perceptions in the U.S., shedding light on the societal dynamics that influence these views and their implications for policy and individual experiences. In addition, this paper draws from related literature to dive deeper into the branches of this topic.
 
-Estimand: This study estimates the nation's perception based on the valid survey responses of around 46700 cases. Although the total cases are around 72000, only 46700 instances are valid. Compared to the whole population of the United States, this quantity/parameter is not significant. However, it does represent a general sense of social perceptions. With this being said, we do want to recognize the limitation of this survey study: the demography of the respondents might be limited to certain regions/genders/age ranges/socioeconomic statuses, which could impact the inclusiveness and accuracy of the results.
+Estimand: The analysis estimates item- and year-specific proportions among valid `YES`/`NO` responses in the GSS sample. The cleaned data contain 72,390 respondent records, while valid binary-response counts across the seven items range from 39,258 to 46,933. Because response availability and nonresponse differ by item and year, no single analytical sample size applies to every result. These descriptive proportions summarize the observed valid responses and should not be interpreted as direct estimates of the entire U.S. population without accounting for survey design and sample composition.
 
 # Data
 
 This paper uses data from the U.S. General Social Survey (GSS) conducted by NORC at the University of Chicago, where public opinion research on abortion in various contexts provides a window into societal values and moral standards. The GSS data offer a rich source of information that captures different perspectives on the different situations in which abortion might be considered. For this analysis, we focus on a set of survey questions probing respondents' views on whether abortion should be legal under various circumstances.
 
-The data in this post was compiled using the open source statistical programming language R [@citeR], liberary knitr{@knitr},tidyverse[@tidyverse], readr[@readr},here[@here},ggplot2[@ggplot2] and dplyr[@dplyr]to clean up.
+The analysis was conducted in the open-source statistical programming language R [@citeR] using knitr [@knitr], tidyverse [@tidyverse], readr [@readr], here [@here], ggplot2 [@ggplot2], and dplyr [@dplyr].
 
 ## Source data
 
@@ -162,13 +162,9 @@ In @tbl-summary,When summarizing the General Social Survey data on attitudes tow
 
 ## Data Limitations
 
-### Gap in 1986 data
+### Responses outside "YES" and "NO"
 
-We're missing the data from the 1986 General Social Survey (GSS), and it's a big deal because it leaves a hole in the data set. The GSS usually gives us a year-by-year look at what people think and feel, so when a year is missing, it messes up the flow and makes it challenging to compare how things change over time. With the 1986 data, it's easier to spot the small changes in what people thought back in the mid-80s. Also, we might be overlooking some significant events or changes in people's opinions from that year, which could help us understand better how things have evolved since then.
-
-### "NA" responses
-
-Dealing with a lot of "don't know" answers in the General Social Survey (GSS) is a pain because it leaves us hanging without clear "yes" or "no" replies, especially when looking at views on abortion. These "NA" or "don't know" choices pop up if people dodge the question or don't have a strong opinion, which punches holes in our data. It's easier to analyze things properly when we need picture chunks. If we see a bunch of these "don't know" answers in certain areas or times, it might mean folks are confused, not well-informed, or don't want to say what they think about abortion. This makes it easier to figure out what the majority believes. These "don't know" replies can shrink the amount of data we have to work with since they're often tossed out like they're not even there, messing with the study's accuracy and how well its findings apply to everyone. So, when we talk about the GSS and abortion opinions, we've got to consider how these "NA" responses limit what we can learn from the data. We need the data from the 1986 General Social Survey (GSS), and it's a big deal because it leaves a hole in the data set. The GSS usually gives us a year-by-year look at what people think and feel, so when a year is missing, it messes up the flow and makes it challenging to compare how things change over time. With the 1986 data, it's easier to spot the small changes in what people thought back in the mid-80s. Also, we might be overlooking some significant events or changes in people's opinions from that year, which could help us understand better how things have evolved since then.
+The source data include responses other than "YES" and "NO," including uncertainty and nonresponse. The cleaning workflow treats these values as missing, so the valid sample size differs across the seven survey items. Excluding these responses simplifies the descriptive comparison but may reduce precision or introduce nonresponse bias if missingness is systematic. The results should therefore be interpreted as summaries of valid binary responses rather than the views of every sampled respondent.
 
 ## Data Cleaning
 
