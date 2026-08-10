@@ -7,7 +7,7 @@ author:
 thanks: "Code and data are available at: https://github.com/QPP123/Abortion-perceptions-surveys"
 date: "March 11, 2024"
 date-format: long
-abstract: "We investigate changes in the social perception of abortion in the United States over the past five decades, utilizing data from the General Social Survey. We analyze 46,700 survey responses and find that opinions on abortion have slightly shifted over time. Support for abortion depends on aspects as the health of the woman, economic constraints, marital status, fetal health issues, and there was rape. A specific example from the results is that support for abortion for women who don’t want children for any reason increased from 37.7% in 1977 to 58.9% in 2022. This study highlights the critical role of social perception in shaping abortion-related legislation, healthcare access, and the broader discourse on gender equality and women's autonomy."
+abstract: "We investigate changes in social perceptions of abortion in the United States over five decades using General Social Survey data. Across seven survey items, valid YES/NO sample sizes range from 39,258 to 46,933 after missing and nonbinary responses are excluded. Attitudes vary substantially by circumstance and shift modestly over time. For abortion for any reason, support among valid respondents increased from 37.7% in 1977 to 58.9% in 2022. The study considers these descriptive patterns in relation to abortion policy, healthcare access, gender equality, and women's autonomy."
 format: pdf
 toc: true
 number-sections: true
@@ -44,7 +44,7 @@ The paper finds that social perceptions of abortion in the U.S. from 1972 to 202
 
 Structured into six parts—abstract, introduction, data, results, discussion, and supplementary survey questions—this paper endeavors to provide a deep understanding of the evolution of abortion perceptions in the U.S., shedding light on the societal dynamics that influence these views and their implications for policy and individual experiences. In addition, this paper draws from related literature to dive deeper into the branches of this topic.
 
-Estimand: This study estimates the nation's perception based on the valid survey responses of around 46700 cases. Although the total cases are around 72000, only 46700 instances are valid. Compared to the whole population of the United States, this quantity/parameter is not significant. However, it does represent a general sense of social perceptions. With this being said, we do want to recognize the limitation of this survey study: the demography of the respondents might be limited to certain regions/genders/age ranges/socioeconomic statuses, which could impact the inclusiveness and accuracy of the results.
+Estimand: The analysis estimates item- and year-specific proportions among valid `YES`/`NO` responses in the GSS sample. The cleaned data contain 72,390 respondent records, while valid binary-response counts across the seven items range from 39,258 to 46,933. Because response availability and nonresponse differ by item and year, no single analytical sample size applies to every result. These descriptive proportions summarize the observed valid responses and should not be interpreted as direct estimates of the entire U.S. population without accounting for survey design and sample composition.
 
 # Data
 

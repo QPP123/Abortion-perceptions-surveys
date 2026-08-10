@@ -4,7 +4,7 @@
 
 This project examines changes in U.S. attitudes toward abortion over five decades using General Social Survey (GSS) data. The analysis considers seven circumstances involving fetal health, the woman's health, rape, economic constraints, marital status, family size, and abortion for any reason.
 
-The paper analyzes 46,700 survey responses and finds that attitudes shifted modestly over time, with substantial differences by circumstance. One reported result is that support for abortion for any reason increased from 37.7% in 1977 to 58.9% in 2022.
+Valid binary-response counts vary by survey item because missing and nonbinary responses are excluded. The analysis finds that attitudes shifted modestly over time, with substantial differences by circumstance. One reported result is that support for abortion for any reason increased from 37.7% in 1977 to 58.9% in 2022.
 
 ## Authors
 
@@ -16,6 +16,18 @@ The paper analyzes 46,700 survey responses and finds that attitudes shifted mode
 The project uses the NORC [General Social Survey](https://gss.norc.org/get-the-data.html) cumulative data for 1972–2022. The repository preserves the source extract at `inputs/data/raw_data/GSS.xlsx` and the cleaned analysis file at `inputs/data/analysis_data/analysis_data.csv`.
 
 The survey variables analyzed are `abdefect`, `abnomore`, `abhlth`, `abpoor`, `abrape`, `absingle`, and `abany`. Responses other than `YES` or `NO` are treated as missing for the analysis.
+
+Valid `YES`/`NO` counts in the tracked cleaned data are:
+
+| Survey item | Valid responses |
+|---|---:|
+| `abdefect` | 46,708 |
+| `abnomore` | 46,618 |
+| `abhlth` | 46,933 |
+| `abpoor` | 46,574 |
+| `abrape` | 46,491 |
+| `absingle` | 46,578 |
+| `abany` | 39,258 |
 
 ## Methods
 
@@ -35,7 +47,6 @@ The study is descriptive and discusses the limits of survey nonresponse, sample 
 - `scripts/` — data-access notes, cleaning code, simulation, and validation checks.
 - `outputs/paper/` — Quarto source, bibliography, and rendered paper.
 - `other/literature/` — supporting literature.
-- `other/llm/` — documented record of LLM assistance.
 - `other/sketches/` — planning sketches for the data, graphs, and tables.
 
 ## Reproducibility
@@ -53,7 +64,3 @@ The workflow requires R with `readxl`, `dplyr`, `tidyr`, `here`, `readr`, `tidyv
 ## Main output
 
 `outputs/paper/Analysis-of-Changes-in-Social-Perceptions-on-Abortion.pdf` is the rendered paper.
-
-## LLM disclosure
-
-Use of ChatGPT 4 and Claude for language, structure, diagramming, and troubleshooting is documented in `other/llm/usage.txt`.
