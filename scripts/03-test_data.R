@@ -1,5 +1,5 @@
 #### Preamble ####
-# Purpose: Tests... [...UPDATE THIS...]
+# Purpose: Validates year ranges, response values, and capitalization in the analysis data
 # Author: Kuiyao Qiao
 # Date: 13th March 2024
 # Contact: kuiyao.qiao@mail.utoronto.ca
